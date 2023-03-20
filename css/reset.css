@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li,
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+textarea,
+button,
+input {
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+    background-color: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}

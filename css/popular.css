@@ -1,0 +1,143 @@
+.home__popular {
+    margin: 0 0 100px 0;
+}
+
+.popular {}
+
+.popular__container {}
+
+.popular__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.9375rem;
+    margin: 2.8125rem 0;
+
+}
+
+.popular__title {}
+
+.title-dark {}
+
+.popular__nav {}
+
+.nav-popular {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.3125rem;
+    column-gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-popular__item {
+    font-weight: 700;
+    position: relative;
+    line-height: 1.5;
+}
+
+.nav-popular__item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0.125rem;
+    background: #D4A373;
+    transition: all 0.3s;
+}
+
+.nav-popular__item:hover::after,
+.nav-popular__item.active::after {
+    width: 100%;
+    left: 0;
+}
+
+.popular__contant {}
+
+.popular__tab {
+    display: none;
+}
+
+.popular__tab.active {
+    display: block;
+}
+
+.popular__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
+    column-gap: 1.25rem;
+    row-gap: 3.125rem;
+}
+
+.popular__item {}
+
+.item-popular {
+    display: grid;
+    align-content: start;
+    gap: 0.9375rem;
+    position: relative;
+}
+
+.item-popular__category {
+    position: absolute;
+    z-index: 2;
+    top: 1.25rem;
+    right: 1.25rem;
+}
+
+.item-popular__image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.3125rem;
+    padding: 90.322581% 0 0 0;
+    /* 280/310 */
+}
+
+.item-popular__image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: transform 0.8s;
+}
+
+.item-popular__image:hover img {
+    transform: scale(1.05);
+}
+
+.item-popular__date {
+    color: #6C757D;
+    line-height: 125%;
+    font-size: 0.75rem;
+}
+
+.item-popular__title {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 138.888889%;
+    color: #495057;
+}
+
+.item-popular__title:hover {
+    text-decoration: underline;
+}
+
+.item-popular__link-title {}
+
+.item-popular__text {
+    color: #6C757D;
+}
+
+@media(max-width:767.98px) {
+    .popular__header {
+        flex-direction: column;
+        margin: 1.5625rem 0;
+    }
+
+    .popular__items {
+        row-gap: 1.875rem;
+    }
+}
